@@ -16,6 +16,9 @@
     },
     "jasmine/jasmine.d.ts": {
       "commit": "6766ed1d0faf02ede9e2edf2e66bbb2388c825ec"
+    },
+    "es6-shim/es6-shim.d.ts": {
+      "commit": "6766ed1d0faf02ede9e2edf2e66bbb2388c825ec"
     }
   }
 }
