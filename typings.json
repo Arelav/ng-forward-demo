@@ -2,10 +2,11 @@
   "name": "ng-forward-typescript",
   "version": false,
   "ambientDependencies": {
-    "jquery": "github:DefinitelyTyped/DefinitelyTyped/jquery/jquery.d.ts#6766ed1d0faf02ede9e2edf2e66bbb2388c825ec",
     "angular": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular.d.ts#6766ed1d0faf02ede9e2edf2e66bbb2388c825ec",
     "angular-ui-router": "github:DefinitelyTyped/DefinitelyTyped/angular-ui-router/angular-ui-router.d.ts#6766ed1d0faf02ede9e2edf2e66bbb2388c825ec",
+    "es6-shim": "github:DefinitelyTyped/DefinitelyTyped/es6-shim/es6-shim.d.ts#6766ed1d0faf02ede9e2edf2e66bbb2388c825ec",
     "jasmine": "github:DefinitelyTyped/DefinitelyTyped/jasmine/jasmine.d.ts#6766ed1d0faf02ede9e2edf2e66bbb2388c825ec",
-    "es6-shim": "github:DefinitelyTyped/DefinitelyTyped/es6-shim/es6-shim.d.ts#6766ed1d0faf02ede9e2edf2e66bbb2388c825ec"
+    "jquery": "github:DefinitelyTyped/DefinitelyTyped/jquery/jquery.d.ts#6766ed1d0faf02ede9e2edf2e66bbb2388c825ec",
+    "require": "registry:dt/require#2.1.20+20160316155526"
   }
 }

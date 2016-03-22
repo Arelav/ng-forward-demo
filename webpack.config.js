@@ -22,7 +22,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.html$/, loader: 'raw' },
-      { test: /\.jade$/, loader: 'jade-html' },
+      { test: /\.jade$/, loader: 'raw!jade-html' },
       { test: /\.ts$/, loader: 'ts' },
       { test: /\.scss$/, loaders: ["style", "css", "sass"] },
       {
