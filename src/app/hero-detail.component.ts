@@ -1,5 +1,3 @@
-/// <reference path="../../typings/tsd.d.ts" />
-
 import {Component} from 'ng-forward';
 import {Hero} from './hero';
 
