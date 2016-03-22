@@ -10,5 +10,9 @@
   },
   "exclude": [
     "node_modules"
+  ],
+  "files": [
+    "./src/app/main.ts",
+    "./typings/browser.d.ts"
   ]
 }
