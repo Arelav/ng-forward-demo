@@ -9,10 +9,12 @@
     "sourceMap": true
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "typings/main",
+    "typings/main.d.ts"
   ],
-  "files": [
-    "./src/app/main.ts",
+  "filesGlob": [
+    "./src/**/*.ts",
     "./typings/browser.d.ts"
   ]
 }
