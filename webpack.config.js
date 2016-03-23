@@ -16,7 +16,8 @@ module.exports = {
     inline: true,
     colors: true,
     historyApiFallback: true,
-    port: 3000,
+    host: process.env.IP || '127.0.0.1',
+    port: process.env.PORT || 3000,
     contentBase: 'public/'
   },
   module: {
