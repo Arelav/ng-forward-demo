@@ -1,9 +1,10 @@
 var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
   debug: true,
   devtool: 'source-map',
-  entry: __dirname + '/src/app/main.ts',
+  entry: ['webpack/hot/dev-server', __dirname + '/src/app/main.ts'],
   output: {
     path: __dirname + '/public',
     filename: "bundle.js"
@@ -12,7 +13,7 @@ module.exports = {
     extensions: ['', '.webpack.js', '.web.js', '.ts', '.js', '.sass', '.scss', '.jade']
   },
   devServer: {
-    // hot: true,
+    hot: true,
     inline: true,
     colors: true,
     historyApiFallback: true,
@@ -22,10 +23,10 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.html$/, loader: 'raw' },
-      { test: /\.jade$/, loader: 'raw!jade-html' },
-      { test: /\.ts$/, loader: 'ts' },
-      { test: /\.scss$/, loaders: ["style", "css", "sass"] },
+      {test: /\.html$/, loader: 'raw'},
+      {test: /\.jade$/, loader: 'raw!jade-html' },
+      {test: /\.ts$/, loader: 'awesome-typescript-loader', exclude: [/\.(spec|e2e)\.ts$/]},
+      {test: /\.scss$/, loaders: ["style", "css", "sass"]},
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: "url-loader?limit=10000&mimetype=application/font-woff"
@@ -36,8 +37,10 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
   sassLoader: {
     includePaths: [path.resolve(__dirname, "./some-folder")]
   }
-}
-
+};

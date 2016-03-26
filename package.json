@@ -12,6 +12,7 @@
   "dependencies": {
     "angular": "^1.5.1",
     "angular-ui-router": "^0.2.18",
+    "awesome-typescript-loader": "^0.17.0-rc.2",
     "css-loader": "^0.23.1",
     "es6-promise": "^3.1.2",
     "es6-shim": "^0.35.0",
