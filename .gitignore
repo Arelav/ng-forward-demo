@@ -132,4 +132,6 @@ Temporary Items
 .apdisk
 
 # Typescript typings
-/typings
+/typings/*
+!/typings
+!/typings/custom

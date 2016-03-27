@@ -1,7 +1,7 @@
 h1 {{ctrl.title}}
 h2 My Heroes
 ul.heroes
-li(ng-repeat='hero in ctrl.heroes', ng-class='{selected: hero === ctrl.selectedHero}', (click)='ctrl.onSelect(hero)')
-span.badge {{hero.id}}
-|  {{hero.name}}
-//my-hero-detail([(hero)]='ctrl.selectedHero')
+  li(ng-repeat='hero in ctrl.heroes', ng-class='{selected: hero === ctrl.selectedHero}', (click)='ctrl.onSelect(hero)')
+    span.badge {{hero.id}}
+    |  {{hero.name}}
+my-hero-detail([(hero)]='ctrl.selectedHero')

@@ -5,22 +5,12 @@ import {Hero} from './hero';
 import {HeroService} from './hero.service';
 import {HeroDetailComponent} from './hero-detail.component';
 
+
 @Inject(HeroService)
 
 @Component({
   selector: 'my-app',
-  template: `
-    <h1>{{ctrl.title}}</h1>
-    <h2>My Heroes</h2>
-    <ul class="heroes">
-      <li ng-repeat="hero in ctrl.heroes"
-        ng-class="{selected: hero === ctrl.selectedHero}"
-        (click)="ctrl.onSelect(hero)">
-        <span class="badge">{{hero.id}}</span> {{hero.name}}
-      </li>
-    </ul>
-    <my-hero-detail [(hero)]="ctrl.selectedHero"></my-hero-detail>
-  `,
+  template: require('./app.template'),
   inputs: ['hero'],
   directives: [HeroDetailComponent],
   providers: [HeroService]

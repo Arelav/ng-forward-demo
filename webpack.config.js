@@ -23,7 +23,6 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.html$/, loader: 'raw'},
       {test: /\.jade$/, loader: 'raw!jade-html' },
       {test: /\.ts$/, loader: 'awesome-typescript-loader', exclude: [/\.(spec|e2e)\.ts$/]},
       {test: /\.scss$/, loaders: ["style", "css", "sass"]},
