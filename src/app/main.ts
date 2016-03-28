@@ -6,7 +6,8 @@ import 'reflect-metadata';
 
 import 'angular';
 import 'angular-ui-router';
+import './app.config'
 import {bootstrap}    from 'ng-forward';
-import {AppComponent} from './app.component.ts';
+import {AppComponent} from './app.component';
 
-bootstrap(AppComponent);
+bootstrap(AppComponent, ['ui.router', 'app.config']);
